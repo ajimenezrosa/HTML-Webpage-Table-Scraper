@@ -6,7 +6,7 @@ library(rvest) #Load the rvest package
 
 
 url <- "http://www.espn.com/college-football/rankings"
-pg <- read_html(url) #Downloads the webpage
+pg <- read_html(url) #Downloads the URLs webpage
 tb <- html_table(pg, fill = TRUE)
 
 ap_ranking<-tb[[1]]
